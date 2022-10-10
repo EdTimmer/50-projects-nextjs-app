@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Cards from '../components/Cards/Cards';
+import ProjectCards from '../components/ProjectCards/ProjectCards';
 import {
   Container,
   Main,
@@ -7,7 +7,6 @@ import {
   Description,
   WebLink,
 } from '../styles/sharedstyles';
-
 
 export default function Home() {
   return (
@@ -32,7 +31,7 @@ export default function Home() {
           </WebLink>
         </Description>
 
-        <Cards />
+        <ProjectCards />
       </Main>
     </Container>
   );
