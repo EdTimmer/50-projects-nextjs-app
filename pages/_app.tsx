@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
-import GlobalStyle from '../components/globalstyles'
+import NavBar from '../components/NavBar/NavBar'
+import GlobalStyle from '../styles/globalstyles'
 
 const theme: DefaultTheme = {
   colors: {
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <NavBar />
         <Component {...pageProps} />
       </ThemeProvider>
     </>

@@ -1,12 +1,13 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Cards from '../components/Cards/Cards';
 import {
   Container,
   Main,
   Title,
   Description,
-  CodeTag,
-} from '../components/sharedstyles'
-import Cards from '../components/cards'
+  WebLink,
+} from '../styles/sharedstyles';
+
 
 export default function Home() {
   return (
@@ -17,17 +18,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
-        <Title>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </Title>
+        <Title>50 Projects</Title>
 
         <Description>
-          Get started by editing
-          <CodeTag>pages/index.tsx</CodeTag>
+          NextJS and Styled Components implementation of Udemy course
+        </Description>
+        <Description>
+          <WebLink
+            href="https://www.udemy.com/course/50-projects-50-days/"
+            target="_blank"
+          >
+            50 Projects In 50 Days - HTML, CSS & JavaScript
+          </WebLink>
         </Description>
 
         <Cards />
       </Main>
     </Container>
-  )
+  );
 }

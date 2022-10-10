@@ -6,20 +6,20 @@ const Container = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 100vh;
+  /* height: 100vh;
+  min-height: 100vh; */
 `
 const Main = styled.main`
-  padding: 5rem 0;
+  padding: 3rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `
 
 const Title = styled.h1`
-  margin: 0;
+  margin: 0 0 2rem 0;
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
@@ -36,11 +36,24 @@ const Title = styled.h1`
   }
 `
 
+const WebLink = styled.a`
+  color: ${({ theme }) => theme.colors.secondary};
+  text-decoration: none;
+  &:hover,
+  :focus,
+  :active {
+    text-decoration: underline;
+  }
+`
+
 const Description = styled.p`
+  padding: 0;
+  margin: 0;
   text-align: center;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2rem;
 `
+
 const CodeTag = styled.code`
   background: #fafafa;
   border-radius: 5px;
@@ -51,4 +64,4 @@ const CodeTag = styled.code`
     Bitstream Vera Sans Mono, Courier New, monospace;
 `
 
-export { Container, Main, Title, Description, CodeTag }
+export { Container, Main, Title, Description, CodeTag, WebLink }
