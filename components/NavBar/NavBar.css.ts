@@ -43,4 +43,5 @@ export const Title = styled.h1`
   grid-column: 2 / 3;
   place-self: center;
   color: white;
+  text-transform: capitalize;
 `

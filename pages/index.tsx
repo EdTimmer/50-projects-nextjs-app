@@ -3,7 +3,6 @@ import ProjectCards from '../components/ProjectCards/ProjectCards';
 import {
   Container,
   Main,
-  Title,
   Description,
   WebLink,
 } from '../styles/sharedstyles';
@@ -18,8 +17,6 @@ export default function Home() {
       </Head>
 
       <Main>
-        <Title>50 Projects</Title>
-
         <Description>
           NextJS and Styled Components implementation of Udemy course
         </Description>

@@ -6,14 +6,17 @@ import { NavBarContainer, NavLinkButton, Title, ButtonLabel } from './NavBar.css
 const NavBar = () => {
   const router = useRouter()
   const isHomePage = router.pathname === '/'
+  const pathname = router.pathname
+  const titleString = pathname.replace("-", " ").replace('/', '')
+  const title = pathname === '/' ? '50 Projects' : titleString
 
   return (
     <NavBarContainer>
-      <Title>50 Projects</Title>
+      <Title>{title}</Title>
       {!isHomePage && (
         <Link href="/">
           <NavLinkButton>
-            <ButtonLabel>Home</ButtonLabel>
+            <ButtonLabel>50 Projects</ButtonLabel>
           </NavLinkButton>
         </Link>
       )}

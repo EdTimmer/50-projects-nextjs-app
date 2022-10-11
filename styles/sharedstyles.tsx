@@ -20,14 +20,6 @@ const Main = styled.main`
   align-items: center;
 `
 
-const Title = styled.h1`
-  margin: 0 0 2rem 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-  text-decoration: none;
-`
-
 const WebLink = styled.a`
   color: ${colors.darkPurple};
   text-decoration: none;
@@ -46,4 +38,4 @@ const Description = styled.p`
   font-size: 2rem;
 `
 
-export { Container, Main, Title, Description, WebLink }
+export { Container, Main, Description, WebLink }
