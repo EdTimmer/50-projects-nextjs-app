@@ -1,7 +1,6 @@
 import { PanelContainer, PanelHeader } from './Panel.css';
 
 const Panel = ({ background, isActive, handleClick, index, title }) => {
-  console.log('isActive', isActive)
   return (
     <PanelContainer
       isActive={isActive}

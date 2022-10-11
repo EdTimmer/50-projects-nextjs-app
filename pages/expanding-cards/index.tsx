@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Panel from '../../components/Panel/Panel';
+import Panel from '../../components/ExpandingCardsComponents/Panel';
 import { ExpandingCardsContainer } from './ExpandingCards.css';
 
 const ExpandingCards = () => {
@@ -34,7 +34,6 @@ const ExpandingCards = () => {
   return (
     <ExpandingCardsContainer>
       {panels.map((panel, index) => {
-        console.log('activeIndex :>> ', activeIndex);
         return (
           <Panel
             background={panel.img}

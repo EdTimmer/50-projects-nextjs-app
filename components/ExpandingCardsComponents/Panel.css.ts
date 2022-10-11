@@ -9,7 +9,7 @@ export const PanelContainer = styled.div<{ isActive: boolean}>`
   color: #fff;
   cursor: pointer;
   flex: ${({ isActive }) => (isActive ? 5 : 0.5)};
-  margin: 1rem;
+  margin: 2rem;
   position: relative;
   transition: flex 0.7s ease-in;
   
@@ -21,7 +21,7 @@ export const PanelContainer = styled.div<{ isActive: boolean}>`
 `
 
 export const PanelHeader = styled.h3<{ isActive: boolean }>`
-  font-size: 2.4rem;
+  font-size: 2rem;
   position: absolute;
   bottom: 2rem;
   left: 2rem;
