@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import '@fontsource/mulish';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -33,12 +34,12 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     padding: 0;
     margin: 0;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish', sans-serif;    
   }
 
   * {
-    box-sizing: border-box;
+    box-sizing: border-box;    
   }
-`;
+`
 
 export default GlobalStyle

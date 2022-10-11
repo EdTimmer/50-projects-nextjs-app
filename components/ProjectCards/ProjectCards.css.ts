@@ -22,7 +22,6 @@ export const Card = styled.button`
   background: white;
   font-size: 2.2rem;
   cursor: pointer;
-  font-family: 'Mulish', sans-serif;
 
   &:hover,
   :focus,

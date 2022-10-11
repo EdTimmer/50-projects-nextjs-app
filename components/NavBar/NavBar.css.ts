@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import colors from '../../styles/colors'
 
 export const NavBarContainer = styled.div`
-  font-family: 'Mulish', sans-serif;
   background: ${colors.grey02};
   width: 100%;
   height: 7rem;
@@ -23,14 +22,12 @@ export const NavLinkButton = styled.button`
   grid-column: 3 / 4;
   place-self: center end;
   display: grid;
-  /* justify-content: center;
-  align-items: center; */
 `
 
 export const ButtonLabel = styled.p`
   padding: 0;
   margin: 0;
-  /* font-family: 'Mulish', sans-serif; */
+  font-family: 'Mulish', sans-serif;
   color: white;
   font-size: 2.2rem;
   place-self: center;
