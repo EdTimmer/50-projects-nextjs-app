@@ -1,6 +1,11 @@
 import { useState } from 'react';
-import Panel from '../../components/ExpandingCardsComponents/Panel';
-import { ExpandingCardsContainer } from './ExpandingCards.css';
+import styled from 'styled-components';
+import Panel from '../components/ExpandingCardsComponents/Panel';
+
+export const ExpandingCardsContainer = styled.div`
+  display: flex;
+  width: 90vw;
+`;
 
 const ExpandingCards = () => {
   const [activeIndex, setActiveIndex] = useState(0);
