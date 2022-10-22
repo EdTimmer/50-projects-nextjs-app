@@ -1,11 +1,5 @@
 import { useState } from 'react';
-import styled from 'styled-components';
-import Panel from '../components/ExpandingCardsComponents/Panel';
-
-export const ExpandingCardsContainer = styled.div`
-  display: flex;
-  width: 90vw;
-`;
+import { ExpandingCardsContainer, PanelContainer, PanelHeader } from '../styles/projectStyles/expandingCards.css';
 
 const ExpandingCards = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -40,14 +34,13 @@ const ExpandingCards = () => {
     <ExpandingCardsContainer>
       {panels.map((panel, index) => {
         return (
-          <Panel
-            background={panel.img}
-            title={panel.title}
-            key={index}
+          <PanelContainer
             isActive={activeIndex === index}
-            handleClick={handleClick}
-            index={index}
-          />
+            onClick={() => handleClick(index)}
+            style={{ backgroundImage: `url("${panel.img}")` }}
+          >
+            <PanelHeader isActive={activeIndex === index}>{panel.title}</PanelHeader>
+          </PanelContainer>
         );
       })}
     </ExpandingCardsContainer>

@@ -16,7 +16,7 @@ const NavBar = () => {
       {!isHomePage && (
         <Link href="/">
           <NavLinkButton>
-            <ButtonLabel>50 Projects</ButtonLabel>
+            <ButtonLabel>Home</ButtonLabel>
           </NavLinkButton>
         </Link>
       )}

@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+export const ExpandingCardsContainer = styled.div`
+  display: flex;
+  width: 90vw;
+`;
+
 export const PanelContainer = styled.div<{ isActive: boolean}>`
   background-size: cover;
   background-position: center;
@@ -17,9 +22,9 @@ export const PanelContainer = styled.div<{ isActive: boolean}>`
     &:nth-of-type(4),
     &:nth-of-type(5) {
       display: none;
-   }
+    }
+  }
 `
-
 export const PanelHeader = styled.h3<{ isActive: boolean }>`
   font-size: 2rem;
   position: absolute;

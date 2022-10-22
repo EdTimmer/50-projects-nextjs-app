@@ -4,7 +4,8 @@ export const FlexContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: column wrap;
+  /* flex-flow: column wrap; */
+  flex-direction: column;
   max-width: 800px;
   margin-top: 3rem;
 `

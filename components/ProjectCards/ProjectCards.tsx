@@ -7,6 +7,9 @@ const ProjectCards = () => {
       <Link href="/expanding-cards">
         <Card>Expanding Cards</Card>
       </Link>
+      <Link href="/progress-steps">
+        <Card>Progress Steps</Card>
+      </Link>
     </FlexContainer>
   );
 };
