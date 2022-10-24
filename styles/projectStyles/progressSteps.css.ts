@@ -13,7 +13,7 @@ export const ProgressContainer = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin: 30px;
+  margin: 100px 30px 30px 30px;
   max-width: 100%;
   width: 350px;
   
@@ -50,6 +50,7 @@ export const Progress = styled.div<{ widthPercent: string }>`
 export const Circle = styled.div<{ isActive: boolean }>`
   background-color: #fff;
   color: #999;
+  font-size: 14px;
   border-radius: 50%;
   border: 3px solid #e0e0e0;
   border-color: ${({ isActive }) => (isActive ? '#3498db' : '#e0e0e0')};
